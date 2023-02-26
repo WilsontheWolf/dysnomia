@@ -20,7 +20,8 @@
   },
   "scripts": {
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix && echo \"\u001b[1m\u001b[32mOK\u001b[39m\u001b[22m\" || echo \"\u001b[1m\u001b[31mNot OK\u001b[39m\u001b[22m\""
+    "lint:fix": "eslint . --fix && echo \"\u001b[1m\u001b[32mOK\u001b[39m\u001b[22m\" || echo \"\u001b[1m\u001b[31mNot OK\u001b[39m\u001b[22m\"",
+    "generate-docs": "jsdoc --configure jsdoc.conf.js --verbose"
   },
   "repository": {
     "type": "git",
@@ -47,10 +48,12 @@
     "@stylistic/eslint-plugin": "^2.10.1",
     "@types/node": "^18.19.64",
     "@types/ws": "^8.5.13",
+    "clean-jsdoc-theme": "^4.2.6",
     "eslint": "^9.15.0",
     "eslint-plugin-jsdoc": "^50.5.0",
     "eslint-plugin-sort-class-members": "^1.21.0",
     "globals": "^15.12.0",
+    "jsdoc": "^4.0.2",
     "typescript": "^5.6.3",
     "typescript-eslint": "^8.14.0"
   },
@@ -94,5 +97,6 @@
     "zlib-sync": {
       "optional": true
     }
-  }
+  },
+  "packageManager": "yarn@1.22.19+sha1.4ba7fc5c6e704fce2066ecbfb0b0d8976fe62447"
 }
